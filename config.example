@@ -11,6 +11,9 @@ TG_CHAT_ID="7350564461"
 ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"  # For blockchain monitoring
 MODEL_PATH="models/pepe_xgb.joblib"  # For AI predictions
 
+ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"
+WHALE_WALLETS="0x1a2b...,0xAf23..."  # Top PEPE holder addresses
+
 # Liquidation Hunting (Optional)
 LIQ_THRESHOLD="0.05"  # 5% price distance to liquidation clusters
 

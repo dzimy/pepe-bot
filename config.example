@@ -1,4 +1,31 @@
 # ===== BYBIT API (MANDATORY) =====
+BYBIT_KEY="your_api_key_here"            # From Bybit API Management
+BYBIT_SECRET="your_api_secret_here"      # Never share this!
+TESTNET="True"                           # False for live trading
+
+# ===== TELEGRAM ALERTS (RECOMMENDED) =====
+TG_TOKEN="your_telegram_bot_token"       # From @BotFather
+TG_CHAT_ID="your_telegram_chat_id"       # From @RawDataBot
+
+# ===== AI/ML CONFIGURATION =====
+MODEL_PATH="models/pepe_xgb_v3.joblib"   # Pretrained model path
+AI_CONFIDENCE_THRESHOLD="0.65"           # Min 65% confidence to trade
+
+# ===== RISK MANAGEMENT =====
+RISK_PER_TRADE="0.02"                    # 2% of equity per trade
+MAX_EXPOSURE="0.3"                       # Max 30% account exposure
+LIQUIDATION_BUFFER="0.03"                # Stay 3% away from liquidation
+
+# ===== PEPE-SPECIFIC SETTINGS =====
+MIN_PUMP_VOLATILITY="0.07"               # 7% price spike to trigger long
+MIN_DUMP_VOLATILITY="-0.05"              # 5% drop to trigger short 
+VOLUME_MULTIPLIER="2.5"                  # 2.5x avg volume required
+
+# ===== BLOCKCHAIN MONITORING (OPTIONAL) =====
+ETH_NODE_URL="https://mainnet.infura.io/v3/your_key"  # For whale tracking
+WHALE_WATCH_LIST="0x1a2b...,0xAf23..."   # Top PEPE holder addresses
+
+# ===== BYBIT API (MANDATORY) =====
 BYBIT_KEY="pShEKwYBg00uuDVz3F"            # From Bybit API Management
 BYBIT_SECRET="WmY1LXmj3w7kmTMEoIWtfhlE03nzoqoMsbGU"      # Never share this!
 TESTNET="True"                           # False for live trading

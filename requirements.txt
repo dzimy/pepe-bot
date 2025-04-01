@@ -1,0 +1,5 @@
+pybit==3.3.0
+numpy
+pandas
+ta
+python-dotenv

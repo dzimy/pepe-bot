@@ -1,21 +1,26 @@
-# Bybit API Configuration
-BYBIT_KEY="pShEKwYBg00uuDVz3F"
-BYBIT_SECRET="WmY1LXmj3w7kmTMEoIWtfhlE03nzoqoMsbGU"
-TESTNET="True"  # Set to False for live trading
+# ===== BYBIT API (MANDATORY) =====
+BYBIT_KEY="pShEKwYBg00uuDVz3F"            # From Bybit API Management
+BYBIT_SECRET="WmY1LXmj3w7kmTMEoIWtfhlE03nzoqoMsbGU"      # Never share this!
+TESTNET="True"                           # False for live trading
 
-# Telegram Alerts (Optional)
-TG_TOKEN="7350564461:AAEE1IJQyMJDXY-STop-Jg0gsI5j44D0TX4"
-TG_CHAT_ID="7350564461"
+# ===== TELEGRAM ALERTS (RECOMMENDED) =====
+TG_TOKEN="7350564461:AAEE1IJQyMJDXY-STop-Jg0gsI5j44D0TX4"       # From @BotFather
+TG_CHAT_ID="7350564461"       # From @RawDataBot
 
-# Advanced Features (If used)
-ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"  # For blockchain monitoring
-MODEL_PATH="models/pepe_xgb.joblib"  # For AI predictions
+# ===== AI/ML CONFIGURATION =====
+MODEL_PATH="models/pepe_xgb_v3.joblib"   # Pretrained model path
+AI_CONFIDENCE_THRESHOLD="0.65"           # Min 65% confidence to trade
 
-ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"
-WHALE_WALLETS="0x1a2b...,0xAf23..."  # Top PEPE holder addresses
+# ===== RISK MANAGEMENT =====
+RISK_PER_TRADE="0.02"                    # 2% of equity per trade
+MAX_EXPOSURE="0.3"                       # Max 30% account exposure
+LIQUIDATION_BUFFER="0.03"                # Stay 3% away from liquidation
 
-# Liquidation Hunting (Optional)
-LIQ_THRESHOLD="0.05"  # 5% price distance to liquidation clusters
+# ===== PEPE-SPECIFIC SETTINGS =====
+MIN_PUMP_VOLATILITY="0.07"               # 7% price spike to trigger long
+MIN_DUMP_VOLATILITY="-0.05"              # 5% drop to trigger short 
+VOLUME_MULTIPLIER="2.5"                  # 2.5x avg volume required
 
-# TWAP Execution (Optional)
-MAX_TWAP_MINUTES="3"  # Split large orders over 3 minutes
+# ===== BLOCKCHAIN MONITORING (OPTIONAL) =====
+ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"  # For whale tracking
+WHALE_WATCH_LIST="0x1a2b...,0xAf23..."   # Top PEPE holder addresses

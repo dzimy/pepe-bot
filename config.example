@@ -1,14 +1,14 @@
 # Bybit API Configuration
-BYBIT_KEY="your_bybit_api_key_here"
-BYBIT_SECRET="your_bybit_api_secret_here"
+BYBIT_KEY="pShEKwYBg00uuDVz3F"
+BYBIT_SECRET="WmY1LXmj3w7kmTMEoIWtfhlE03nzoqoMsbGU"
 TESTNET="True"  # Set to False for live trading
 
 # Telegram Alerts (Optional)
-TG_TOKEN="your_telegram_bot_token_here"
-TG_CHAT_ID="your_telegram_chat_id_here"
+TG_TOKEN="7350564461:AAEE1IJQyMJDXY-STop-Jg0gsI5j44D0TX4"
+TG_CHAT_ID="7350564461"
 
 # Advanced Features (If used)
-ETH_NODE_URL="https://mainnet.infura.io/v3/your_infura_key"  # For blockchain monitoring
+ETH_NODE_URL="https://mainnet.infura.io/v3/0b04530e5760482d940bd1276a265de6"  # For blockchain monitoring
 MODEL_PATH="models/pepe_xgb.joblib"  # For AI predictions
 
 # Liquidation Hunting (Optional)
